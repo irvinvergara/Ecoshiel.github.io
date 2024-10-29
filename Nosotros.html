@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECOSHIELD</title>
+  <link rel="stylesheet" href="estilos/style_nosotros.css">
+  <script>
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      const isHidden = content.classList.contains('hidden');
+
+      const allContents = document.querySelectorAll('.accordion-content');
+      allContents.forEach(c => c.classList.add('hidden'));
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <p>Detecta y protege tus cultivos a tiempo con tecnología inteligente para el cuidado de tus plantas.</p>
+      <button class="login-btn" onclick="window.location.href='iniciarsesion.html'">Iniciar sesión</button>
+    </div>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="imagenes/ecoshield.png" alt="Logo de Ecoshield">
+        <h1>ECOSHIELD</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Servicio</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li>
+          <a href="https://wa.me/51996650682" target="_blank" class="whatsapp-link">
+            <img src="imagenes/whattsap.png" alt="Icono de WhatsApp" class="whatsapp-icon">
+            +51 996 650 682
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero-section">
+    <img src="imagenes/Imagen1.png" alt="Imagen de fondo">
+    <div class="hero-text">
+      <h2>Nosotros</h2>
+      <p>En Earthkeepers, somos una startup innovadora que combina tecnología avanzada con inteligencia artificial para ofrecer soluciones de detección temprana de plagas y enfermedades en cultivos.</p>
+      <button>Ver más</button>
+    </div>
+  </main>
+
+  <section class="quienes-somos">
+    <h2>Nosotros</h2>
+    <div class="integrantes">
+      <div class="integrante">
+        <img src="imagenes/integrante1.png" alt="Integrante Alexander Aquino">
+        <h3>Alexander Aquino</h3>
+        <p>Co-Fundador</p>
+      </div>
+      <div class="integrante">
+        <img src="imagenes/integrante2.png" alt="Integrante Gerardo Chavez">
+        <h3>Gerardo Chavez</h3>
+        <p>Co-Fundador</p>
+      </div>
+      <div class="integrante">
+        <img src="imagenes/integrante3.png" alt="Integrante Andres Levano">
+        <h3>Andres Levano</h3>
+        <p>Co-Fundador</p>
+      </div>
+      <div class="integrante">
+        <img src="imagenes/integrante4.png" alt="Integrante Irvin Vergara">
+        <h3>Irvin Vergara</h3>
+        <p>Co-Fundador</p>
+      </div>
+      <div class="integrante">
+        <img src="imagenes/integrante5.png" alt="Integrante Diego Vilca">
+        <h3>Diego Vilca</h3>
+        <p>Co-Fundador</p>
+      </div>
+    </div>
+    <div class="valores">
+      <button class="accordion-button" onclick="toggleContent('mision')">Misión</button>
+      <div id="mision" class="accordion-content hidden">
+        <p>Empoderar a los agricultores con herramientas tecnológicas avanzadas que permitan la detección temprana de plagas, asegurando la protección y salud de sus cultivos. A través de la innovación y la inteligencia artificial, buscamos mejorar la eficiencia agrícola, reducir las pérdidas y contribuir a una agricultura más sostenible y rentable, apoyando a los agricultores en su camino hacia un futuro más resiliente y productivo.</p>
+      </div>
+      <button class="accordion-button" onclick="toggleContent('vision')">Visión</button>
+      <div id="vision" class="accordion-content hidden">
+        <p>Nos proyectamos como una herramienta esencial en el manejo agrícola, ayudando a los agricultores a enfrentar los desafíos relacionados con las plagas de manera más efectiva. Con la posibilidad de expansión a nivel global, la aplicación tiene el potencial de transformar la agricultura tradicional, llevando a una producción más segura, eficiente y sostenible.</p>
+      </div>
+      <button class="accordion-button" onclick="toggleContent('valores')">Valores</button>
+      <div id="valores" class="accordion-content hidden">
+        <p>En Earthkeepers, nos caracterizamos por nuestra sostenibilidad en las prácticas agrícolas, la innovación constante en nuestras soluciones tecnológicas, y el compromiso con el éxito de los agricultores. Creemos en la colaboración como clave para enfrentar desafíos, y trabajamos con ética y transparencia en todas nuestras relaciones. Además, nos esforzamos por garantizar la accesibilidad de nuestras herramientas para todos los productores, independientemente de su tamaño o ubicación.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

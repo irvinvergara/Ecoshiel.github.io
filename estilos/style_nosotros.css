@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #C0C78C;
+    color: #333;
+}
+
+.top-bar {
+    background-color: #e4e4b7;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-btn {
+    background-color: #d1d1a4;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #FEFAE0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo h1 {
+    color: #C0C78C;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #90541A;
+    font-size: 16px;
+}
+
+.navbar .logo img {
+    width: 50px;
+    height: auto;
+}
+
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 90vh;
+    padding-right: 0px;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.hero-text {
+    position: absolute;
+    text-align: center;
+    right: 150px;
+    color: white;
+    padding-left: 50px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.hero-text p {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    background-color: #6ab04c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004d40;
+    color: white;
+}
+
+.navbar a:hover {
+    color: #c8e6c9;
+}
+
+.quienes-somos {
+    padding: 50px;
+    background-color: #FEFAE0;
+    text-align: center;
+}
+
+.quienes-somos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #90541A;
+}
+
+.integrantes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.integrante {
+    background-color: #e4e4b7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.integrante img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.integrante h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.integrante p {
+    font-size: 14px;
+    color: #333;
+}
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    background-color: #389745;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.whatsapp-link:hover {
+    background-color: #070606;
+}
+
+.whatsapp-icon {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.navbar ul li a.whatsapp-link{
+  color: #ffffff;
+  position: relative; top: -10%;
+}
+
+.accordion-button {
+    background-color: #6ab04c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #004d40;
+}
+
+.accordion-content {
+    background-color: #f3f3f3;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+    border-top: 2px solid #6ab04c;
+    color: #333;
+}
+
+.hidden {
+  display: none;
+}
