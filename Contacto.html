@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ECOSHIELD</title>
-  <link rel="stylesheet" href="estilos/style.css">
+  <title>Earthkeepers</title>
+  <link rel="stylesheet" href="estilos/style_contacto.css">
 </head>
 <body>
+
   <header>
     <div class="top-bar">
       <p>Detecta y protege tus cultivos a tiempo con tecnología inteligente para el cuidado de tus plantas.</p>
@@ -14,8 +15,8 @@
     </div>
     <nav class="navbar">
       <div class="logo">
-        <img src="imagenes/Imagen1.png" alt="ecoshield">
-        <h1>ECOSHIELD</h1>
+        <img src="imagenes/ecoshield.png" alt="Logo de Earthkeepers">
+        <h1>Earthkeepers</h1>
       </div>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -24,28 +25,68 @@
         <li><a href="Contacto.html">Contacto</a></li>
         <li>
           <a href="https://wa.me/51996650682" target="_blank" class="whatsapp-link">
-            <img src="imagenes/whattsap.png" alt="WhatsApp Icon" class="whatsapp-icon">
+            <img src="imagenes/whattsap.png" alt="Icono de WhatsApp" class="whatsapp-icon">
             +51 996 650 682
           </a>
         </li>
       </ul>
     </nav>
   </header>
+
   <main class="hero-section">
-    <img src="imagenes/Imagen1.jpg" alt="Imagen1">
+    <img src="imagenes/Imagen1.png" alt="Imagen de fondo">
     <div class="hero-text">
-      <h2>Detección temprana <span>en plantas</span></h2>
-      <p>Nos especializamos en 
-        entregarte una detección 
-        precisa y confiable para tus 
-        plantas</p>
+      <h2>Contacto</h2>
+      <p>En EcoShield, nos interesa apoyarte en cada paso para lograr cultivos sanos y productivos. ¿Necesitas más información sobre nuestros servicios o tienes alguna pregunta específica? Escríbenos y uno de nuestros especialistas te responderá a la brevedad.</p>
       <button>Ver más</button>
     </div>
   </main>
-  <section class="quienes-somos">
-    <h2>Nosotros</h2>
- 
+
+  <!-- Formulario de contacto -->
+  <div class="form-container">
+    <form action="#" method="post">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre y Apellido</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Número de teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="requerimiento">Requerimiento</label>
+        <textarea id="requerimiento" name="requerimiento" rows="5" required></textarea>
+      </div>
+      <div class="form-submit">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
   </div>
-</section>
+
+  <!-- Ubicación del mapa -->
+  <section class="google-map">
+    <h2>Ubicación</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d473.6840452816785!2d-76.9939462407944!3d-12.145465186175501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e3!4m0!4m3!3m2!1d-12.14542952084157!2d-76.99391822789305!5e0!3m2!1ses-419!2spe!4v1730496618042!5m2!1ses-419!2spe" 
+    width= 100%, 
+    height="500" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </section>
+
 </body>
 </html>
